@@ -1,21 +1,16 @@
-/* ---------- Sanitize CSS ---------- */
-@import url('https://cdn.skypack.dev/sanitize.css');
-@import url('https://unpkg.com/sanitize.css/forms.css');
-@import url('https://unpkg.com/sanitize.css/assets.css');
-@import url('https://unpkg.com/sanitize.css/typography.css');
+@import './material-ui.css';
 
-/* ---------- Fonts ---------- */
-@import url('https://fonts.googleapis.com/css2?family=Roboto+Flex:opsz,wght@8..144,300;8..144,400;8..144,500&display=swap');
-@import url('https://fonts.googleapis.com/css?family=Roboto+Serif');
+html {
+	display: flex;
+	justify-content: center;
+	background-color: var(--background-color);
+	color: var(--on-background-color);
+}
 
-/* ---------- Icons ---------- */
-@import url('https://fonts.googleapis.com/css?family=Material+Icons');
+body {
+	width: 61.8vw;
+}
 
-/* ---------- Colors ---------- */
-@import './colors.css';
-
-/* ---------- HTML Elements ---------- */
-@import './elements/typography.css';
-
-/* ---------- Extra Classes ---------- */
-@import './classes/typography.css';
+a {
+	color: var(--primary-color);
+}
