@@ -1,0 +1,74 @@
+/**
+ * GENERATOR:
+ * https://material-foundation.github.io/material-theme-builder/#/custom
+ */
+
+:root {
+	/** ---------- ACCENT COLORS ---------- */
+	--primary-color: #3c6a1c;
+	--on-primary-color: #ffffff;
+	--primary-container-color: #bcf294;
+	--on-primary-container-color: #0b2000;
+
+	--secondary-color: #56624b;
+	--on-secondary-color: #ffffff;
+	--secondary-container-color: #d9e7c9;
+	--on-secondary-container-color: #141e0c;
+
+	--tertiary-color: #396666;
+	--on-tertiary-color: #ffffff;
+	--tertiary-container: #bbebea;
+	--on-tertiary-container: #002020;
+
+	/** ---------- NEUTRAL COLORS ---------- */
+	--background-color: #fdfdf5;
+	--on-background-color: #1a1c17;
+	--surface-color: #fdfdf5;
+	--on-surface-color: #1a1c17;
+
+	--surface-variant-color: #dfe4d5;
+	--on-surface-variant-color: #43483e;
+	--outline-color: #74796d;
+
+	/** ---------- ADDITIONAL COLORS ---------- */
+	--error-color: #ba1b1b;
+	--on-error-color: #ffffff;
+	--error-container-color: #ffdad4;
+	--on-error-container-color: #410001;
+}
+
+@media (prefers-color-scheme: dark) {
+	:root {
+		/** ---------- ACCENT COLORS ---------- */
+		--primary-color: #a0d57a;
+		--on-primary-color: #133800;
+		--primary-container-color: #245102;
+		--on-primary-container-color: #bcf294;
+	
+		--secondary-color: #becbaf;
+		--on-secondary-color: #283420;
+		--secondary-container-color: #3e4a34;
+		--on-secondary-container-color: #d9e7c9;
+	
+		--tertiary-color: #a0cfce;
+		--on-tertiary-color: #003737;
+		--tertiary-container: #1e4e4d;
+		--on-tertiary-container: #bbebea;
+	
+		/** ---------- NEUTRAL COLORS ---------- */
+		--background-color: #1a1c17;
+		--on-background-color: #e3e3dc;
+		--surface-color: #1a1c17;
+		--on-surface-color: #e3e3dc;
+	
+		--surface-variant-color: #43483e;
+		--on-surface-variant-color: #c4c8bb;
+		--outline-color: #8e9386;
+	
+		/** ---------- ADDITIONAL COLORS ---------- */
+		--error-color: #ffb4a9;
+		--on-error-color: #680003;
+		--error-container-color: #930006;
+		--on-error-container-color: #ffdad4;
+	}
+}

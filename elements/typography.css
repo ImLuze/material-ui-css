@@ -1,0 +1,54 @@
+body {
+	font-family: 'Roboto Flex', sans-serif;
+}
+
+h1 {
+	font-weight: lighter;
+	font-size: 6rem;
+	letter-spacing: -1.5px;
+}
+
+h2 {
+	font-weight: lighter;
+	font-size: 3.75rem;
+	letter-spacing: -.5px;
+}
+
+h3 {
+	font-weight: normal;
+	font-size: 3rem;
+}
+
+h4 {
+	font-weight: normal;
+	font-size: 2.125rem;
+	letter-spacing: .25px;
+}
+
+h5 {
+	font-weight: normal;
+	font-size: 1.5rem;
+}
+
+h6 {
+	font-weight: bold;
+	size: 1.25rem;
+	letter-spacing: .15px;
+}
+
+p {
+	letter-spacing: .5px;
+}
+
+caption {
+	font-size: .875rem;
+	letter-spacing: .4px;
+}
+
+button {
+	font-weight: bold;
+	font-size: .875rem;
+	letter-spacing: 1.25px;
+	text-transform: uppercase;
+}
+
