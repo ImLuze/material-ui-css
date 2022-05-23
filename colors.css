@@ -4,71 +4,161 @@
  */
 
 :root {
+	/** ---------- TONAL PALETTE ---------- */
+	--primary-0: 0, 0%, 0%;
+	--primary-10: 257, 87%, 19%;
+	--primary-20: 254, 53%, 28%;
+	--primary-30: 253, 40%, 38%;
+	--primary-40: 253, 31%, 47%;
+	--primary-50: 253, 36%, 57%;
+	--primary-60: 253, 49%, 68%;
+	--primary-70: 252, 76%, 79%;
+	--primary-80: 254, 86%, 86%;
+	--primary-90: 260, 83%, 93%;
+	--primary-95: 263, 89%, 96%;
+	--primary-99: 300, 60%, 99%;
+	--primary-100: 0, 0%, 100%;
+
+	--secondary-0: 0, 0%, 0%;
+	--secondary-10: 251, 25%, 13%;
+	--secondary-20: 253, 16%, 22%;
+	--secondary-30: 253, 12%, 31%;
+	--secondary-40: 256, 9%, 40%;
+	--secondary-50: 258, 8%, 49%;
+	--secondary-60: 257, 10%, 60%;
+	--secondary-70: 256, 14%, 70%;
+	--secondary-80: 258, 24%, 81%;
+	--secondary-90: 258, 56%, 92%;
+	--secondary-95: 263, 89%, 96%;
+	--secondary-99: 300, 60%, 99%;
+	--secondary-100: 0, 0%, 100%;
+
+	--tertiary-0: 0, 0%, 0%;
+	--tertiary-10: 337, 41%, 13%;
+	--tertiary-20: 337, 27%, 21%;
+	--tertiary-30: 339, 21%, 30%;
+	--tertiary-40: 339, 17%, 40%;
+	--tertiary-50: 341, 15%, 49%;
+	--tertiary-60: 341, 20%, 60%;
+	--tertiary-70: 342, 29%, 71%;
+	--tertiary-80: 341, 48%, 82%;
+	--tertiary-90: 341, 72%, 92%;
+	--tertiary-95: 344, 71%, 96%;
+	--tertiary-99: 15, 67%, 99%;
+	--tertiary-100: 0, 0%, 100%;
+
+	--error-0: 0, 0%, 0%;
+	--error-10: 5, 62%, 15%;
+	--error-20: 5, 63%, 21%;
+	--error-30: 5, 61%, 31%;
+	--error-40: 5, 61%, 40%;
+	--error-50: 5, 59%, 51%;
+	--error-60: 5, 57%, 62%;
+	--error-70: 4, 56%, 72%;
+	--error-80: 5, 54%, 81%;
+	--error-90: 5, 55%, 91%;
+	--error-95: 0, 55%, 96%;
+	--error-99: 24, 71%, 99%;
+	--error-100: 0, 0%, 100%;
+
+	--neutral-0: 0, 0%, 0%;
+	--neutral-10: 255, 7%, 11%;
+	--neutral-20: 260, 3%, 19%;
+	--neutral-30: 280, 2%, 28%;
+	--neutral-40: 264, 3%, 37%;
+	--neutral-50: 270, 2%, 47%;
+	--neutral-60: 270, 2%, 57%;
+	--neutral-70: 285, 2%, 67%;
+	--neutral-80: 276, 5%, 78%;
+	--neutral-90: 300, 7%, 89%;
+	--neutral-95: 288, 19%, 95%;
+	--neutral-99: 300, 60%, 99%;
+	--neutral-100: 0, 0%, 100%;
+
+	--neutral-variant-0: 0, 0%, 0%;
+	--neutral-variant-10: 257, 12%, 12%;
+	--neutral-variant-20: 257, 7%, 20%;
+	--neutral-variant-30: 260, 6%, 29%;
+	--neutral-variant-40: 255, 4%, 38%;
+	--neutral-variant-50: 267, 4%, 47%;
+	--neutral-variant-60: 260, 4%, 58%;
+	--neutral-variant-70: 264, 6%, 68%;
+	--neutral-variant-80: 267, 10%, 79%;
+	--neutral-variant-90: 273, 22%, 90%;
+	--neutral-variant-95: 273, 48%, 95%;
+	--neutral-variant-99: 300, 60%, 99%;
+	--neutral-variant-100: 0, 0%, 100%;
+
 	/** ---------- ACCENT COLORS ---------- */
-	--primary-color: #3c6a1c;
-	--on-primary-color: #ffffff;
-	--primary-container-color: #bcf294;
-	--on-primary-container-color: #0b2000;
+	--primary-color: var(--primary-40);
+	--on-primary-color: var(--primary-100);
+	--primary-container-color: var(--primary-90);
+	--on-primary-container-color: var(--primary-10);
 
-	--secondary-color: #56624b;
-	--on-secondary-color: #ffffff;
-	--secondary-container-color: #d9e7c9;
-	--on-secondary-container-color: #141e0c;
+	--secondary-color: var(--secondary-40);
+	--on-secondary-color: var(--secondary-100);
+	--secondary-container-color: var(--secondary-90);
+	--on-secondary-container-color: var(--secondary-10);
 
-	--tertiary-color: #396666;
-	--on-tertiary-color: #ffffff;
-	--tertiary-container: #bbebea;
-	--on-tertiary-container: #002020;
+	--tertiary-color: var(--tertiary-40);
+	--on-tertiary-color: var(--tertiary-100);
+	--tertiary-container: var(--tertiary-90);
+	--on-tertiary-container: var(--tertiary-10);
 
 	/** ---------- NEUTRAL COLORS ---------- */
-	--background-color: #fdfdf5;
-	--on-background-color: #1a1c17;
-	--surface-color: #fdfdf5;
-	--on-surface-color: #1a1c17;
+	--background-color: var(--neutral-99);
+	--on-background-color: var(--neutral-10);
+	--surface-color: var(--neutral-99);
+	--on-surface-color: var(--neutral-10);
 
-	--surface-variant-color: #dfe4d5;
-	--on-surface-variant-color: #43483e;
-	--outline-color: #74796d;
+	--surface-variant-color: var(--neutral-variant-90);
+	--on-surface-variant-color: var(--neutral-variant-30);
+	--outline-color: var(--neutral-variant-50);
 
 	/** ---------- ADDITIONAL COLORS ---------- */
-	--error-color: #ba1b1b;
-	--on-error-color: #ffffff;
-	--error-container-color: #ffdad4;
-	--on-error-container-color: #410001;
+	--error-color: var(--error-40);
+	--on-error-color: var(--error-100);
+	--error-container-color: var(--error-90);
+	--on-error-container-color: var(--error-10);
+
+	/** ---------- OPACITY ---------- */
+	--opacity-1: 8%;
+	--opacity-2: 12%;
+	--opacity-3: 16%;
 }
 
 @media (prefers-color-scheme: dark) {
 	:root {
 		/** ---------- ACCENT COLORS ---------- */
-		--primary-color: #a0d57a;
-		--on-primary-color: #133800;
-		--primary-container-color: #245102;
-		--on-primary-container-color: #bcf294;
+		--primary-color: var(--primary-80);
+		--on-primary-color: var(--primary-20);
+		--primary-container-color: var(--primary-30);
+		--on-primary-container-color: var(--primary-90);
 	
-		--secondary-color: #becbaf;
-		--on-secondary-color: #283420;
-		--secondary-container-color: #3e4a34;
-		--on-secondary-container-color: #d9e7c9;
+		--secondary-color: var(--secondary-80);
+		--on-secondary-color: var(--secondary-20);
+		--secondary-container-color: var(--secondary-30);
+		--on-secondary-container-color: var(--secondary-90);
 	
-		--tertiary-color: #a0cfce;
-		--on-tertiary-color: #003737;
-		--tertiary-container: #1e4e4d;
-		--on-tertiary-container: #bbebea;
+		--tertiary-color: var(--tertiary-80);
+		--on-tertiary-color: var(--tertiary-20);
+		--tertiary-container: var(--tertiary-30);
+		--on-tertiary-container: var(--tertiary-90);
 	
 		/** ---------- NEUTRAL COLORS ---------- */
-		--background-color: #1a1c17;
-		--on-background-color: #e3e3dc;
-		--surface-color: #1a1c17;
-		--on-surface-color: #e3e3dc;
+		--background-color: var(--neutral-10);
+		--on-background-color: var(--neutral-90);
+		--surface-color: var(--neutral-10);
+		--on-surface-color: var(--neutral-90);
 	
-		--surface-variant-color: #43483e;
-		--on-surface-variant-color: #c4c8bb;
-		--outline-color: #8e9386;
+		--surface-variant-color: var(--neutral-variant-60);
+		--on-surface-variant-color: var(--neutral-variant-30);
+		--outline-color: var(--neutral-variant-80);
 	
 		/** ---------- ADDITIONAL COLORS ---------- */
-		--error-color: #ffb4a9;
-		--on-error-color: #680003;
-		--error-container-color: #930006;
-		--on-error-container-color: #ffdad4;
+		--error-color: var(--error-80);
+		--on-error-color: var(--error-20);
+		--error-container-color: var(--error-30);
+		--on-error-container-color: var(--error-90);
 	}
 }

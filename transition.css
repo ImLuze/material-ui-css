@@ -1,0 +1,10 @@
+:root {
+	--transition-timing-function: cubic-bezier(.4, 0, .2, 1);
+	--transition-duration: .28s;
+}
+
+@media (prefers-reduced-motion) {
+	:root {
+		--transition-duration: 0s;
+	}
+}

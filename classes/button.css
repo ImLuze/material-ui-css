@@ -1,0 +1,114 @@
+/* ---------- .OUTLINED ---------- */
+:where(button, input[type='submit'], input[type='button'], input[type='reset']).outlined:enabled {
+	color: hsl(var(--primary-color));
+	background-color: transparent;
+	border: 1px solid hsl(var(--outline-color));
+
+	transition: background-color var(--transition-duration) var(--transition-timing-function);
+}
+
+:where(button, input[type='submit'], input[type='button'], input[type='reset']).outlined:hover:enabled {
+	background-color: hsla(var(--primary-color), var(--opacity-1));
+	box-shadow: none;
+}
+
+:where(button, input[type='submit'], input[type='button'], input[type='reset']).outlined:active:enabled {
+	background-color: hsla(var(--primary-color), var(--opacity-2));
+	box-shadow: none;
+}
+
+:where(button, input[type='submit'], input[type='button'], input[type='reset']).outlined:focus:enabled {
+	background-color: hsla(var(--primary-color), var(--opacity-2));
+	border: 1px solid hsl(var(--primary-color));
+}
+
+:where(button, input[type='submit'], input[type='button'], input[type='reset']).outlined:disabled {
+	background-color: transparent;
+	border: 1px solid hsla(var(--on-surface-color), var(--opacity-2));
+}
+
+/* ---------- .TEXT ---------- */
+:where(button, input[type='submit'], input[type='button'], input[type='reset']).text:enabled {
+	color: hsl(var(--primary-color));
+	background-color: transparent;
+	padding: 10px 12px;
+
+	transition: background-color var(--transition-duration) var(--transition-timing-function);
+}
+
+:where(button, input[type='submit'], input[type='button'], input[type='reset']).text:hover:enabled {
+	background-color: hsla(var(--primary-color), var(--opacity-1));
+	box-shadow: none;
+}
+
+:where(button, input[type='submit'], input[type='button'], input[type='reset']).text:active:enabled {
+	background-color: hsla(var(--primary-color), var(--opacity-2));
+	box-shadow: none;
+}
+
+:where(button, input[type='submit'], input[type='button'], input[type='reset']).text:focus:enabled {
+	background-color: hsla(var(--primary-color), var(--opacity-2));
+}
+
+:where(button, input[type='submit'], input[type='button'], input[type='reset']).text:disabled {
+	background-color: transparent;
+	padding: 10px 12px;
+}
+
+/* ---------- .ELEVATED ---------- */
+:where(button, input[type='submit'], input[type='button'], input[type='reset']).elevated:enabled {
+	color: hsl(var(--primary-color));
+	background-color: hsla(var(--primary-color), var(--opacity-1));
+	box-shadow: 0 1px 2px rgba(0, 0, 0, .3), 0 1px 3px 1px rgba(0, 0, 0, .15);
+
+	transition:
+		background-color var(--transition-duration) var(--transition-timing-function),
+		box-shadow var(--transition-duration) var(--transition-timing-function);
+}
+
+:where(button, input[type='submit'], input[type='button'], input[type='reset']).elevated:hover:enabled {
+	background-color: hsla(var(--primary-color), var(--opacity-2));
+	box-shadow: 0 1px 2px rgba(0, 0, 0, .3), 0 2px 6px 2px rgba(0, 0, 0, .15);
+}
+
+:where(button, input[type='submit'], input[type='button'], input[type='reset']).elevated:active:enabled {
+	background-color: hsla(var(--primary-color), var(--opacity-3));
+	box-shadow: 0 1px 2px rgba(0, 0, 0, .3), 0 2px 6px 2px rgba(0, 0, 0, .15);
+}
+
+:where(button, input[type='submit'], input[type='button'], input[type='reset']).elevated:focus:enabled {
+	background-color: hsla(var(--primary-color), var(--opacity-3));
+	box-shadow: 0 1px 2px rgba(0, 0, 0, .3), 0 2px 6px 2px rgba(0, 0, 0, .15);
+}
+
+/* ---------- .TONAL ---------- */
+:where(button, input[type='submit'], input[type='button'], input[type='reset']).tonal:enabled {
+	color: hsl(var(--on-secondary-container-color));
+	background-color: hsl(var(--secondary-container-color));
+}
+
+/* ---------- .ICON ---------- */
+:where(button, input[type='submit'], input[type='button'], input[type='reset']).icon {
+	width: 2.5rem;
+	padding: 0;
+	box-shadow: none;
+
+	transition:
+		background-color var(--transition-duration) var(--transition-timing-function),
+		box-shadow var(--transition-duration) var(--transition-timing-function),
+		color var(--transition-duration) var(--transition-timing-function);
+}
+
+:where(button, input[type='submit'], input[type='button'], input[type='reset']).icon.outlined:enabled,
+:where(button, input[type='submit'], input[type='button'], input[type='reset']).icon.text:enabled {
+	color: hsl(var(--on-surface-variant-color));
+}
+
+:where(button, input[type='submit'], input[type='button'], input[type='reset']).icon.text:hover:enabled {
+	background-color: hsla(var(--on-surface-variant-color), var(--opacity-1));
+}
+
+:where(button, input[type='submit'], input[type='button'], input[type='reset']).icon.text:active:enabled,
+:where(button, input[type='submit'], input[type='button'], input[type='reset']).icon.text:focus:enabled {
+	background-color: hsla(var(--on-surface-variant-color), var(--opacity-2));
+}
