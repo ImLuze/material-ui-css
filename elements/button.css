@@ -1,32 +1,43 @@
-button {
-	background-color: var(--primary-color);
-	color: var(--on-primary-color);
+:where(button, input[type='submit'], input[type='button'], input[type='reset']) {
+	-webkit-appearance: button;
+	background-color: hsl(var(--primary-color));
+	color: hsl(var(--on-primary-color));
+	font-size: .875rem;
 
 	display: inline-flex;
-	flex-direction: column;
-	justify-content: center;
+	flex-direction: row;
 	align-items: center;
+	justify-content: center;
 	padding: 10px 24px;
 	gap: 10px;
+	height: 2.5rem;
+	vertical-align: bottom;
 
 	border: none;
 	border-radius: 1.25rem;
 
-	transition: box-shadow .2s ease-in-out, opacity .2s ease-in-out;
+	transition:
+		box-shadow var(--transition-duration) var(--transition-timing-function),
+		opacity var(--transition-duration) var(--transition-timing-function);
 }
 
-button:hover:enabled, button:focus:enabled {
-	opacity: 0.92;
+:where(button, input[type='submit'], input[type='button'], input[type='reset']):enabled {
+	cursor: pointer;
+}
+
+:where(button, input[type='submit'], input[type='button'], input[type='reset']):hover:enabled,
+:where(button, input[type='submit'], input[type='button'], input[type='reset']):focus:enabled {
+	opacity: .92;
 	box-shadow: 0px 1px 2px rgba(0, 0, 0, .3), 0px 1px 3px 1px rgba(0, 0, 0, .15);
 }
 
-button:disabled {
-	background-color: rgba(31, 31, 31, .12);
-	color: var(--outline-color);
+:where(button, input[type='submit'], input[type='button'], input[type='reset']):disabled {
+	background-color: hsla(var(--on-surface-color), var(--opacity-2));
+	color: hsla(var(--on-surface-color), 38%);
 }
 
 @media (prefers-color-scheme: dark) {
-	button:disabled {
+	:where(button, input[type='submit'], input[type='button'], input[type='reset']):disabled {
 		background-color: rgba(227, 227, 227, .12);
 	}
 }

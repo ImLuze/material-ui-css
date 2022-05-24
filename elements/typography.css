@@ -3,50 +3,32 @@ body {
 }
 
 h1 {
-	font-weight: lighter;
-	font-size: 6rem;
-	letter-spacing: -1.5px;
+	font-size: 3.5625rem;
+	line-height: 3.3125rem;
+	letter-spacing: -.25px;
 }
 
 h2 {
-	font-weight: lighter;
-	font-size: 3.75rem;
-	letter-spacing: -.5px;
+	font-size: 2rem;
+	line-height: 2.5rem;
 }
 
 h3 {
-	font-weight: normal;
-	font-size: 3rem;
-}
-
-h4 {
-	font-weight: normal;
-	font-size: 2.125rem;
-	letter-spacing: .25px;
-}
-
-h5 {
-	font-weight: normal;
-	font-size: 1.5rem;
-}
-
-h6 {
-	font-weight: bold;
-	size: 1.25rem;
-	letter-spacing: .15px;
-}
-
-p {
-	letter-spacing: .5px;
-}
-
-caption {
-	font-size: .875rem;
-	letter-spacing: .4px;
+	font-weight: medium;
+	font-size: 1.375rem;
+	line-height: 1.75rem;
 }
 
 button {
+	font-weight: medium;
 	font-size: .875rem;
-	letter-spacing: 1.25px;
+	line-height: 1.25rem;
+	letter-spacing: .1px;
+}
+
+p {
+	font-size: 1rem;
+	line-height: 1.5rem;
+	letter-spacing: .15px;
 }
 

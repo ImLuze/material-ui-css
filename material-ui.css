@@ -9,14 +9,17 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto+Serif');
 
 /* ---------- Icons ---------- */
-@import url('https://fonts.googleapis.com/css?family=Material+Icons');
+@import './icons.css';
 
 /* ---------- Colors ---------- */
 @import './colors.css';
+
+/* ---------- Transitions ---------- */
+@import './transition.css';
 
 /* ---------- HTML Elements ---------- */
 @import './elements/typography.css';
 @import './elements/button.css';
 
 /* ---------- Extra Classes ---------- */
-@import './classes/typography.css';
+@import './classes/button.css';

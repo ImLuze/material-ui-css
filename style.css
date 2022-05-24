@@ -3,8 +3,8 @@
 html {
 	display: flex;
 	justify-content: center;
-	background-color: var(--background-color);
-	color: var(--on-background-color);
+	background-color: hsl(var(--background-color));
+	color: hsl(var(--on-background-color));
 }
 
 body {
@@ -12,5 +12,5 @@ body {
 }
 
 a {
-	color: var(--primary-color);
+	color: hsl(var(--primary-color));
 }
