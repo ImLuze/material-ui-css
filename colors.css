@@ -127,6 +127,15 @@
 	--opacity-3: 16%;
 }
 
+html {
+	background-color: hsl(var(--background-color));
+}
+
+dialog::backdrop {
+	--background-color: 300, 60%, 99%;
+	--opacity-3: 16%;
+}
+
 @media (prefers-color-scheme: dark) {
 	:root {
 		/** ---------- ACCENT COLORS ---------- */
@@ -151,14 +160,18 @@
 		--surface-color: var(--neutral-10);
 		--on-surface-color: var(--neutral-90);
 	
-		--surface-variant-color: var(--neutral-variant-60);
-		--on-surface-variant-color: var(--neutral-variant-30);
-		--outline-color: var(--neutral-variant-80);
+		--surface-variant-color: var(--neutral-variant-30);
+		--on-surface-variant-color: var(--neutral-variant-80);
+		--outline-color: var(--neutral-variant-60);
 	
 		/** ---------- ADDITIONAL COLORS ---------- */
 		--error-color: var(--error-80);
 		--on-error-color: var(--error-20);
 		--error-container-color: var(--error-30);
 		--on-error-container-color: var(--error-90);
+	}
+
+	dialog::backdrop {
+		--background-color: 255, 7%, 11%;
 	}
 }

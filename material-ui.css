@@ -20,6 +20,9 @@
 /* ---------- HTML Elements ---------- */
 @import './elements/typography.css';
 @import './elements/button.css';
+@import './elements/dialog.css';
+@import './elements/table.css';
+@import './elements/details.css';
 
 /* ---------- Extra Classes ---------- */
 @import './classes/button.css';

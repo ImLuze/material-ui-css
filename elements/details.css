@@ -1,0 +1,42 @@
+details > summary {
+	list-style-type: none;
+}
+
+details > summary::-webkit-details-marker {
+	display: none;
+}
+
+details > summary::after {
+	font-family: 'Material Symbols Outlined';
+	font-weight: normal;
+	font-style: normal;
+	font-size: 24px;
+	line-height: 1;
+	letter-spacing: normal;
+	text-transform: none;
+	display: inline-block;
+	white-space: nowrap;
+	word-wrap: normal;
+	direction: ltr;
+	text-rendering: optimizeLegibility;
+	-webkit-font-smoothing: antialiased;
+
+	content: 'chevron_right';
+	transition: transform var(--transition-duration) var(--transition-timing-function);
+}
+
+details[open] > summary::after {
+	transform: rotate(90deg);
+}
+
+summary {
+	display: flex;
+	justify-content: space-between;
+	cursor: pointer;
+}
+
+details {
+	border: 1px solid hsl(var(--outline-color));
+	border-radius:.5rem;
+	padding: 1rem 1.5rem;
+}

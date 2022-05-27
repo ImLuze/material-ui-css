@@ -6,6 +6,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>HTML5 Test Page</title>
 	<link rel="stylesheet" href="style.css">
+	<script src="./index.js"></script>
 </head>
 
 <body>
@@ -30,23 +31,16 @@
 						<li><a href="#text__tables">Tabular data</a></li>
 						<li><a href="#text__code">Code</a></li>
 						<li><a href="#text__inline">Inline elements</a></li>
-						<li><a href="#text__comments">HTML Comments</a></li>
 					</ul>
 				</li>
 				<li>
 					<a href="#embedded">Embedded content</a>
 					<ul>
-						<li><a href="#embedded__images">Images</a></li>
-						<li><a href="#embedded__bgimages">Background images</a></li>
 						<li><a href="#embedded__audio">Audio</a></li>
 						<li><a href="#embedded__video">Video</a></li>
 						<li><a href="#embedded__canvas">Canvas</a></li>
 						<li><a href="#embedded__meter">Meter</a></li>
 						<li><a href="#embedded__progress">Progress</a></li>
-						<li><a href="#embedded__svg">Inline SVG</a></li>
-						<li><a href="#embedded__iframe">IFrames</a></li>
-						<li><a href="#embedded__embed">Embed</a></li>
-						<li><a href="#embedded__object">Object</a></li>
 					</ul>
 				</li>
 				<li>
@@ -60,6 +54,9 @@
 						<li><a href="#forms__html5">HTML5 inputs</a></li>
 						<li><a href="#forms__action">Action buttons</a></li>
 					</ul>
+				</li>
+				<li>
+					<a href="#dialogs">Dialogs</a>
 				</li>
 			</ul>
 		</nav>
@@ -270,14 +267,14 @@
 								<td>Table Cell 4</td>
 								<td>Table Cell 5</td>
 							</tr>
-							<tr>
+							<tr role="button">
 								<td>Table Cell 1</td>
 								<td>Table Cell 2</td>
 								<td>Table Cell 3</td>
 								<td>Table Cell 4</td>
 								<td>Table Cell 5</td>
 							</tr>
-							<tr>
+							<tr role="link">
 								<td>Table Cell 1</td>
 								<td>Table Cell 2</td>
 								<td>Table Cell 3</td>
@@ -349,64 +346,11 @@
 						<p><a href="#top">[Top]</a></p>
 					</footer>
 				</article>
-				<article id="text__comments">
-					<header>
-						<h2>HTML Comments</h2>
-					</header>
-					<div>
-						<p>There is comment here:
-							<!--This comment should not be displayed-->
-						</p>
-						<p>There is a comment spanning multiple tags and lines below here.</p>
-						<!--<p><a href="#!">This is a text link. But it should not be displayed in a comment</a>.</p>
-              <p><strong>Strong is used to indicate strong importance. But, it should not be displayed in a comment</strong></p>
-              <p><em>This text has added emphasis. But, it should not be displayed in a comment</em></p>-->
-					</div>
-					<footer>
-						<p><a href="#top">[Top]</a></p>
-					</footer>
-				</article>
 			</section>
 			<section id="embedded">
 				<header>
 					<h2>Embedded content</h2>
 				</header>
-				<article id="embedded__images">
-					<header>
-						<h2>Images</h2>
-					</header>
-					<div>
-						<h3>Plain <code>&lt;img&gt;</code> element</h3>
-						<p><img src="https://placekitten.com/480/480" alt="Photo of a kitten"></p>
-						<h3><code>&lt;figure&gt;</code> element with <code>&lt;img&gt;</code> element</h3>
-						<figure><img src="https://placekitten.com/420/420" alt="Photo of a kitten"></figure>
-						<h3><code>&lt;figure&gt;</code> element with <code>&lt;img&gt;</code> and <code>&lt;figcaption&gt;</code>
-							elements</h3>
-						<figure>
-							<img src="https://placekitten.com/420/420" alt="Photo of a kitten">
-							<figcaption>Here is a caption for this image.</figcaption>
-						</figure>
-						<h3><code>&lt;figure&gt;</code> element with a <code>&lt;picture&gt;</code> element</h3>
-						<figure>
-							<picture>
-								<source srcset="https://placekitten.com/800/800" media="(min-width: 800px)">
-								<img src="https://placekitten.com/420/420" alt="Photo of a kitten" />
-							</picture>
-						</figure>
-					</div>
-					<footer>
-						<p><a href="#top">[Top]</a></p>
-					</footer>
-				</article>
-				<article id="embedded__bgimages">
-					<header>
-						<h2>Background images</h2>
-					</header>
-					<div style="background-image:url('https://placekitten.com/300/300'); width:300px; height: 300px;"></div>
-					<footer>
-						<p><a href="#top">[Top]</a></p>
-					</footer>
-				</article>
 				<article id="embedded__audio">
 					<header>
 						<h2>Audio</h2>
@@ -425,15 +369,6 @@
 						<p><a href="#top">[Top]</a></p>
 					</footer>
 				</article>
-				<article id="embedded__canvas">
-					<header>
-						<h2>Canvas</h2>
-					</header>
-					<div><canvas>canvas</canvas></div>
-					<footer>
-						<p><a href="#top">[Top]</a></p>
-					</footer>
-				</article>
 				<article id="embedded__meter">
 					<header>
 						<h2>Meter</h2>
@@ -448,44 +383,6 @@
 						<h2>Progress</h2>
 					</header>
 					<div><progress>progress</progress></div>
-					<footer>
-						<p><a href="#top">[Top]</a></p>
-					</footer>
-				</article>
-				<article id="embedded__svg">
-					<header>
-						<h2>Inline SVG</h2>
-					</header>
-					<div><svg width="100px" height="100px">
-							<circle cx="100" cy="100" r="100" fill="#1fa3ec"></circle>
-						</svg></div>
-					<footer>
-						<p><a href="#top">[Top]</a></p>
-					</footer>
-				</article>
-				<article id="embedded__iframe">
-					<header>
-						<h2>IFrame</h2>
-					</header>
-					<div><iframe src="index.html" height="300"></iframe></div>
-					<footer>
-						<p><a href="#top">[Top]</a></p>
-					</footer>
-				</article>
-				<article id="embedded__embed">
-					<header>
-						<h2>Embed</h2>
-					</header>
-					<div><embed src="index.html" height="300"></div>
-					<footer>
-						<p><a href="#top">[Top]</a></p>
-					</footer>
-				</article>
-				<article id="embedded__object">
-					<header>
-						<h2>Object</h2>
-					</header>
-					<div><object data="index.html" height="300"></object></div>
 					<footer>
 						<p><a href="#top">[Top]</a></p>
 					</footer>
@@ -649,59 +546,76 @@
 						<p>
 							<button type="button">No class</button>
 							<button type="button" disabled>No class</button>
-							<button type="button"><span class="icon">add</span>No class</button>
-							<button type="button" disabled><span class="icon">add</span>No class</button>
+							<button type="button"><i>add</i>No class</button>
+							<button type="button" disabled><i>add</i>No class</button>
 						</p>
 						<p>
 							<button type="button" class="outlined">.outlined</button>
 							<button type="button" class="outlined" disabled>.outlined</button>
-							<button type="button" class="outlined"><span class="icon">add</span>.outlined</button>
-							<button type="button" class="outlined" disabled><span class="icon">add</span>.outlined</button>
+							<button type="button" class="outlined"><i>add</i>.outlined</button>
+							<button type="button" class="outlined" disabled><i>add</i>.outlined</button>
 						</p>
 						<p>
 							<button type="button" class="text">.text</button>
 							<button type="button" class="text" disabled>.text</button>
-							<button type="button" class="text"><span class="icon">add</span>.text</button>
-							<button type="button" class="text" disabled><span class="icon">add</span>.text</button>
+							<button type="button" class="text"><i>add</i>.text</button>
+							<button type="button" class="text" disabled><i>add</i>.text</button>
 						</p>
 						<p>
 							<button type="button" class="elevated">.elevated</button>
 							<button type="button" class="elevated" disabled>.elevated</button>
-							<button type="button" class="elevated"><span class="icon">add</span>.elevated</button>
-							<button type="button" class="elevated" disabled><span class="icon">add</span>.elevated</button>
+							<button type="button" class="elevated"><i>add</i>.elevated</button>
+							<button type="button" class="elevated" disabled><i>add</i>.elevated</button>
 						</p>
 						<p>
 							<button type="button" class="tonal">.tonal</button>
 							<button type="button" class="tonal" disabled>.tonal</button>
-							<button type="button" class="tonal"><span class="icon">add</span>.tonal</button>
-							<button type="button" class="tonal" disabled><span class="icon">add</span>.tonal</button>
+							<button type="button" class="tonal"><i>add</i>.tonal</button>
+							<button type="button" class="tonal" disabled><i>add</i>.tonal</button>
 						</p>
 						<p>
-							<button type="button" class="icon"><span class="icon">bookmark</span></button>
-							<button type="button" class="icon" disabled><span class="icon">bookmark</span></button>
+							<button type="button" class="icon"><i>bookmark</i></button>
+							<button type="button" class="icon" disabled><i>bookmark</i></button>
 						</p>
 						<p>
-							<button type="button" class="icon text"><span class="icon">bookmark</span></button>
-							<button type="button" class="icon text" disabled><span class="icon">bookmark</span></button>
+							<button type="button" class="icon text"><i>bookmark</i></button>
+							<button type="button" class="icon text" disabled><i>bookmark</i></button>
 						</p>
 						<p>
-							<button type="button" class="icon outlined"><span class="icon">bookmark</span></button>
-							<button type="button" class="icon outlined" disabled><span class="icon">bookmark</span></button>
+							<button type="button" class="icon outlined"><i>bookmark</i></button>
+							<button type="button" class="icon outlined" disabled><i>bookmark</i></button>
 						</p>
 						<p>
-							<button type="button" class="icon tonal"><span class="icon">bookmark</span></button>
-							<button type="button" class="icon tonal" disabled><span class="icon">bookmark</span></button>
+							<button type="button" class="icon tonal"><i>bookmark</i></button>
+							<button type="button" class="icon tonal" disabled><i>bookmark</i></button>
 						</p>
 					</fieldset>
 					<p><a href="#top">[Top]</a></p>
 				</form>
 			</section>
+			<section id="dialogs">
+				<header>
+					<h2>Dialogs</h2>
+				</header>
+				<button type="button" onclick="openBasicDialog()">Open basic dialog</button>
+				<dialog id="basic-dialog">
+					<header>
+						<h2>Basic dialog title</h2>
+					</header>
+					<main>
+						<p>A dialog is a type of modal window that appears in front of app content to provide critical information, or
+							prompt for a decision to be made.</p>
+					</main>
+					<footer>
+						<form method="dialog">
+							<button type="submit" class="text">Action 2</button>
+							<button type="submit" class="text">Action 1</button>
+						</form>
+					</footer>
+				</dialog>
+			</section>
+			<p><a href="#top">[Top]</a></p>
 		</main>
-		<footer>
-			<p>Made by <a href="http://twitter.com/cbracco">@cbracco</a>. Code on <a
-					href="http://github.com/cbracco/html5-test-page">GitHub</a>.</p>
-		</footer>
 	</div>
 </body>
-
 </html>

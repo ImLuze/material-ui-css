@@ -1,0 +1,27 @@
+dialog {
+	width: 19.5rem;
+	background: linear-gradient(0deg, hsl(var(--on-primary-container-color), var(--opacity-2)), hsl(var(--on-primary-container-color), var(--opacity-2))), hsl(var(--background-color));
+	border: none;
+	border-radius: 1.75rem;
+	padding: 1.5rem;
+
+	position: fixed;
+	left: 0;
+}
+
+dialog header *:first-child {
+	margin-top: 0;
+	margin-block-start: 0;
+}
+
+dialog footer {
+	height: 3rem;
+
+	display: flex;
+	justify-content: flex-end;
+	align-items: center;
+}
+
+dialog::backdrop {
+	background-color: hsla(var(--background-color), calc(100% - var(--opacity-3)));
+}

@@ -1,0 +1,25 @@
+tr {
+	border-top: 1px solid hsl(var(--outline-color));
+}
+
+thead tr {
+	border-top: none;
+}
+
+td, th {
+	padding: 1rem 1.5rem;
+	text-align: left;
+}
+
+tr {
+	transition: background-color var(--transition-duration) var(--transition-timing-function);
+}
+
+:where(tr[role='button'], tr[role='link']):hover {
+	background-color: hsla(var(--primary-color), var(--opacity-1));
+	cursor: pointer;
+}
+
+table {
+	width: 100%;
+}
